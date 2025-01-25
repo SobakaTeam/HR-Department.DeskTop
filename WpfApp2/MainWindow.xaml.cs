@@ -54,16 +54,16 @@ namespace WpfApp2
         
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var pass = passwordBox.SecurePassword.GetType();
+            var pass = passwordBox.SecurePassword.GetType();         
             adminWindows.Show();
             this.Close();
-                    
-          
-          
-            
-            
            
-            
+
+
+
+
+
+
         }
 
       
