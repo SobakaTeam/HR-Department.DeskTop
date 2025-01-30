@@ -13,8 +13,8 @@
                 <TextBlock TextWrapping="Wrap" Text="TextBlock" Height="26" Width="117"/>
             </ListBox>
         </Border>
-        <Grid HorizontalAlignment="Left" Height="434" Margin="108,0,0,0" VerticalAlignment="Center" Width="556">
-            <Grid HorizontalAlignment="Left" Height="76" Margin="16,30,0,0" VerticalAlignment="Top" Width="113">
+        <Grid x:Name="adminGridHost" HorizontalAlignment="Left" Height="434" Margin="108,0,0,0" VerticalAlignment="Center" Width="556">
+            <Grid HorizontalAlignment="Left" Height="76" Margin="10,8,0,0" VerticalAlignment="Top" Width="113">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="45*"/>
                     <RowDefinition Height="34*"/>
@@ -24,19 +24,17 @@
                     <ColumnDefinition Width="112*"/>
                     <ColumnDefinition Width="13*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="ВВО" HorizontalAlignment="Center" Width="102" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,7" Grid.Column="1" />
+                <Label Content="ВВО" HorizontalAlignment="Center" Width="102" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,1,0,6" Grid.Column="1" />
                 <Label Content="Имя" HorizontalAlignment="Center" VerticalAlignment="Top" Height="41" Width="124" Background="White" Margin="0,37,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
             </Grid>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" Margin="16,30,0,0" VerticalAlignment="Top" Width="102"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="4" Margin="16,64,0,0" VerticalAlignment="Top" Width="102" Background="Black"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" Margin="10,10,0,0" VerticalAlignment="Top" Width="102"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="4" Margin="10,46,0,0" VerticalAlignment="Top" Width="102" Background="Black"/>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="24" Margin="0,410,0,0" VerticalAlignment="Top" Width="556">
-                <Grid>
+                <Grid x:Name="downGridButton">
                     <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="40"/>
-                    <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0" Width="40"/>
-                    <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="90,0,0,0" Width="40"/>
-                    <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="135,0,0,0" Width="40"/>
                 </Grid>
             </Border>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="227,138,0,0" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Window>

@@ -39,7 +39,7 @@
                 </TextBox.Effect>
             </TextBox>
             <Button x:Name="avto" Content="Авторизация"   HorizontalAlignment="Center" Width="232" Height="33" VerticalAlignment="Top" Canvas.Left="126" Canvas.Top="230" Click="Button_Click" Background="#FF00CAFF" FontSize="16" FontFamily="Comic Sans MS" Foreground="#FFFBFBFB" Cursor="Hand">
-                
+
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"

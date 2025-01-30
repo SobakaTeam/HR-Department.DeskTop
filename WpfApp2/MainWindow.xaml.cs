@@ -22,7 +22,7 @@ namespace WpfApp2
     /// </summary>
     public partial class MainWindow : Window
     {
-        adminWindows adminWindows = new adminWindows();
+        
      
         public MainWindow()
         {
@@ -54,6 +54,7 @@ namespace WpfApp2
         
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            adminWindows adminWindows = new adminWindows();
             var pass = passwordBox.SecurePassword.GetType();         
             adminWindows.Show();
             this.Close();
