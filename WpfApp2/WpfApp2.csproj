@@ -138,7 +138,7 @@
     <EmbeddedResource Include="Images\eye_icon.png" />
     <EmbeddedResource Include="Images\eye_off_icon.png" />
     <EmbeddedResource Include="Images\locked_icon.png" />
-    <EmbeddedResource Include="Images\user_icon.png" />
+    <Resource Include="Images\user_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="user_icon.png" />
@@ -153,7 +153,7 @@
     <Resource Include="eye_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Images\avatar.jpg" />
+    <Resource Include="Images\avatar.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="avatar.jpg" />
