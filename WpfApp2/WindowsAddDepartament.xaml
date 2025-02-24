@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
+        ResizeMode="NoResize"
         mc:Ignorable="d"
-        Title="WindowsAddDepartament" Height="450" Width="800">
+        Title="WindowsAddDepartament" Height="470" Width="800">
     <Grid>
         <Grid.OpacityMask>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -20,34 +21,40 @@
                 <GradientStop Color="#FF7EBDB6" Offset="0.462"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Center" Height="303" VerticalAlignment="Center" Width="559" Stroke="Black" Opacity="0.7" RadiusX="21.54" RadiusY="21.54">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF8497E4"/>
-                    <GradientStop Color="#FF3B59D2" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Button Content="Зарегестрировать" HorizontalAlignment="Center" Margin="0,296,0,0" VerticalAlignment="Top" Height="33" Width="192" Click="Button_Click_1" Background="#FF813528">
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}"
-     BorderBrush="{TemplateBinding BorderBrush}"
-     BorderThickness="{TemplateBinding BorderThickness}"
-     CornerRadius="10">
-                        <!-- Измените это значение для настройки скругления -->
-                        <ContentPresenter HorizontalAlignment="Center"
-                   VerticalAlignment="Center" />
 
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="192" Height="30" SelectionTextBrush="White" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" Height="30" Margin="0,249,0,0" FontFamily="Times New Roman" FontSize="18"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="261,194,0,0" VerticalAlignment="Top" Width="38" Source="/department.png" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="261,241,0,0" VerticalAlignment="Top" Width="38" Stretch="Fill" Source="/hostDepartment.png"/>
-        <Label Content="Регестрация Учереждения" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" BorderBrush="Black" Foreground="White"/>
+        <Grid>
+            <Grid Margin="111,52,111,57">
+                <Rectangle HorizontalAlignment="Center" Height="293" VerticalAlignment="Top" Width="533" Stroke="Black" Opacity="0.7" RadiusX="21.54" RadiusY="21.54" Margin="0,22,0,0">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF8497E4"/>
+                            <GradientStop Color="#FF3B59D2" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Button Content="Зарегестрировать" HorizontalAlignment="Center" Margin="0,246,0,0" VerticalAlignment="Top" Height="33" Width="192" Click="Button_Click_1" Background="#FF813528">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+BorderBrush="{TemplateBinding BorderBrush}"
+BorderThickness="{TemplateBinding BorderThickness}"
+CornerRadius="10">
+                                <!-- Измените это значение для настройки скругления -->
+                                <ContentPresenter HorizontalAlignment="Center"
+              VerticalAlignment="Center" />
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBox x:Name="registorDepartName" HorizontalAlignment="Center" TextWrapping="Wrap"   VerticalAlignment="Top" Width="192" Height="30" SelectionTextBrush="White" FontFamily="Times New Roman" FontSize="18" Margin="0,137,0,0"/>
+                <TextBox x:Name="registorName" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top" Width="192" Height="30" Margin="0,184,0,0" FontFamily="Times New Roman" FontSize="18"/>
+                <Image HorizontalAlignment="Left" Height="38" Margin="150,129,0,0" VerticalAlignment="Top" Width="38" Source="/department.png" Stretch="Fill" RenderTransformOrigin="0.411,0.989"/>
+                <Image HorizontalAlignment="Left" Height="38" Margin="150,176,0,0" VerticalAlignment="Top" Width="38" Stretch="Fill" Source="/hostDepartment.png" RenderTransformOrigin="-3.342,-0.946"/>
+                <Label Content="Регестрация Учереждения" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" BorderBrush="Black" Foreground="White"/>
+
+            </Grid>
+        </Grid>
 
     </Grid>
 </Window>

@@ -59,9 +59,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddDepartamentAdminWindows.cs" />
+    <Compile Include="DataBAnk.cs" />
+    <Compile Include="view\DepartmentControl.xaml.cs">
+      <DependentUpon>DepartmentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowsAddDepartament.xaml.cs">
       <DependentUpon>WindowsAddDepartament.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsHuman.xaml.cs">
+      <DependentUpon>windowsHuman.xaml</DependentUpon>
     </Compile>
     <Page Include="adminWindows.xaml">
       <SubType>Designer</SubType>
@@ -82,7 +91,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="view\DepartmentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowsAddDepartament.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsHuman.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,6 +181,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="hostDepartment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="пп1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MEMPHIS_BACKGROUND_Mesa_de_trabajo_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pngwing.com.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

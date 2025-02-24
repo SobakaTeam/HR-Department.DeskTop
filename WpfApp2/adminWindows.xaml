@@ -4,37 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
+        xmlns:view="clr-namespace:WpfApp2.view"
         mc:Ignorable="d"
         Title="adminWindows" Height="450" Width="800">
+    
     <Grid Background="#FFB9ECEC">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="669,0,0,0" Width="131">
             <ListBox Margin="0,-1,0,-1" HorizontalAlignment="Center" Width="131">
                 <Button Content="Button" Height="37" Width="115" Click="Button_Click"/>
                 <TextBlock TextWrapping="Wrap" Text="TextBlock" Height="26" Width="117"/>
             </ListBox>
+            
         </Border>
-        <Grid x:Name="adminGridHost" HorizontalAlignment="Left" Height="434" Margin="108,0,0,0" VerticalAlignment="Center" Width="556">
-            <Grid HorizontalAlignment="Left" Height="76" Margin="10,8,0,0" VerticalAlignment="Top" Width="113">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="45*"/>
-                    <RowDefinition Height="34*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="112*"/>
-                    <ColumnDefinition Width="13*"/>
-                </Grid.ColumnDefinitions>
-                <Label Content="ВВО" HorizontalAlignment="Center" Width="102" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,1,0,6" Grid.Column="1" />
-                <Label Content="Имя" HorizontalAlignment="Center" VerticalAlignment="Top" Height="41" Width="124" Background="White" Margin="0,37,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
-            </Grid>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" Margin="10,10,0,0" VerticalAlignment="Top" Width="102"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="4" Margin="10,46,0,0" VerticalAlignment="Top" Width="102" Background="Black"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="24" Margin="0,410,0,0" VerticalAlignment="Top" Width="556">
-                <Grid x:Name="downGridButton">
-                    <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="40"/>
-                </Grid>
-            </Border>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="227,138,0,0" VerticalAlignment="Top"/>
-        </Grid>
+        <view:DepartmentControl x:Name="departamentControl" Loaded="DepartmentControl_Loaded" Margin="-10,0,10,0"/>
+
+
     </Grid>
+    
 </Window>

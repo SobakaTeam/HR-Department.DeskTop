@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WpfApp2;
+using WpfApp2.view;
+using static System.Net.Mime.MediaTypeNames;
 namespace WpfApp2
 {
     /// <summary>
@@ -19,12 +21,8 @@ namespace WpfApp2
     /// </summary>
     public partial class WindowsAddDepartament : Window
     {
-
-        AddDepartamentAdminWindows addDepartamentAdmin;
-        private WindowsAddDepartament (AddDepartamentAdminWindows _addAdminWin)
-        {
-            addDepartamentAdmin = _addAdminWin;
-        }
+        
+        
         public WindowsAddDepartament()
         {
             InitializeComponent();
@@ -34,13 +32,28 @@ namespace WpfApp2
 
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            view.DepartmentControl departmentControl;
+            adminWindows admin;
+            departmentControl = new view.DepartmentControl();
 
-            adminWindows adminWindows = new adminWindows();
+            DataBAnk.name = registorName.Text;
+            DataBAnk.Department = registorDepartName.Text;
+            DataBAnk.names.Add(departmentControl.name.Text);
+            DataBAnk.Departments.Add(departmentControl.Departament.Text);
+
+            departmentControl.name.Visibility = Visibility.Visible;
+            departmentControl.Departament.Visibility = Visibility.Visible;
+            departmentControl.border.Visibility = Visibility.Visible;
+            departmentControl.borderfon.Visibility = Visibility.Visible;
+
+            admin = new adminWindows();
+            admin.Show();
             this.Close();
-            adminWindows.Visibility = Visibility.Visible;
             
-           
-           
+            
+            
+          
         }
+      
     }
 }

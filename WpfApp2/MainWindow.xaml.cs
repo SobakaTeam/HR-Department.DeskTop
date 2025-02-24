@@ -14,7 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
-using WpfApp2; 
+using WpfApp2;
+using WpfApp2.view;
 namespace WpfApp2
 {
     /// <>
@@ -55,18 +56,12 @@ namespace WpfApp2
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             adminWindows adminWindows = new adminWindows();
-            var pass = passwordBox.SecurePassword.GetType();         
+            var pass = passwordBox.SecurePassword.GetType();
             adminWindows.Show();
             this.Close();
-           
-
-
-
-
-
-
         }
-
+      
       
     }
+   
 }
