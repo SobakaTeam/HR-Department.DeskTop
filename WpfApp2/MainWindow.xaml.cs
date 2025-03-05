@@ -59,9 +59,23 @@ namespace WpfApp2
             var pass = passwordBox.SecurePassword.GetType();
             adminWindows.Show();
             this.Close();
+
+           
+
         }
-      
-      
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
     }
    
 }

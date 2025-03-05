@@ -7,9 +7,32 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         ResizeMode="NoResize"
+        WindowStyle="None"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF2596C1">
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23*"/>
+                <RowDefinition Height="427*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#3f4bb8" MouseDown="Grid_MouseDown">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Image Source="Images/pngwing.com.png"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Right"
+                           Cursor="Hand"
+                           MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                </Grid>
+                
+            </Grid>
+            
+        </Grid>
         <Canvas Margin="158,67,158,66">
             <Rectangle Height="301" VerticalAlignment="Center" Opacity="0.7" HorizontalAlignment="Center" Width="484" RadiusX="21.54" RadiusY="21.54">
                 <Rectangle.Stroke>

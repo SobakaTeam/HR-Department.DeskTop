@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -46,14 +47,28 @@ namespace WpfApp2
             departmentControl.border.Visibility = Visibility.Visible;
             departmentControl.borderfon.Visibility = Visibility.Visible;
 
-            admin = new adminWindows();
-            admin.Show();
-            this.Close();
-            
-            
-            
-          
+                                                   
+            if (registorName.Text.Length <= 1)
+            {
+               MessageBox.Show("Введённое имя слишком короткое, введите своё настоящие имя!");
+                registorName.Text = "";
+            }
+            else if(registorName.Text.Length >= 2)
+            {
+
+                MessageBox.Show("Вы успешно зарегестрировались");
+
+                admin = new adminWindows();
+                admin.Show();
+                this.Close();
+            }   
         }
-      
+
+        private void registorName_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {            
+           Regex regex = new Regex("[^a-zA-Zа-яА-ЯёЁ]"); 
+           e.Handled = regex.IsMatch(e.Text);
+                    
+        }
     }
 }

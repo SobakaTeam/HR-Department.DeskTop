@@ -20,7 +20,7 @@
             </ListBox>
             
         </Border>
-        <view:DepartmentControl x:Name="departamentControl" Loaded="DepartmentControl_Loaded" Margin="-10,0,10,0"/>
+        <view:DepartmentControl x:Name="departamentControl" Loaded="DepartmentControl_Loaded"/>
 
 
     </Grid>
