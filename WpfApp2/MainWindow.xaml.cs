@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -54,14 +55,12 @@ namespace WpfApp2
         }
         
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            adminWindows adminWindows = new adminWindows();
-            var pass = passwordBox.SecurePassword.GetType();
-            adminWindows.Show();
-            this.Close();
-
-           
-
+        {                               
+               adminWindows adminWindows = new adminWindows();
+               var pass = passwordBox.SecurePassword.GetType();
+               adminWindows.Show();
+               this.Close();                             
+                             
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)

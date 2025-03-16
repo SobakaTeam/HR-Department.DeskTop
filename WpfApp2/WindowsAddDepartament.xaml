@@ -36,12 +36,13 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border Background="{TemplateBinding Background}"
-BorderBrush="{TemplateBinding BorderBrush}"
-BorderThickness="{TemplateBinding BorderThickness}"
-CornerRadius="10">
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                CornerRadius="10"
+                                                Cursor="Hand">
                                 <!-- Измените это значение для настройки скругления -->
                                 <ContentPresenter HorizontalAlignment="Center"
-              VerticalAlignment="Center" />
+                                                    VerticalAlignment="Center" />
 
                             </Border>
                         </ControlTemplate>
@@ -49,8 +50,8 @@ CornerRadius="10">
                 </Button>
                 <TextBox x:Name="registorDepartName" HorizontalAlignment="Center" TextWrapping="Wrap"   VerticalAlignment="Top" Width="192" Height="30" SelectionTextBrush="White" FontFamily="Times New Roman" FontSize="18" Margin="0,137,0,0"/>
                 <TextBox x:Name="registorName" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top" Width="192" Height="30" Margin="0,184,0,0" FontFamily="Times New Roman" FontSize="18" PreviewTextInput="registorName_PreviewTextInput"/>
-                <Image HorizontalAlignment="Left" Height="38" Margin="150,129,0,0" VerticalAlignment="Top" Width="38" Source="/department.png" Stretch="Fill" RenderTransformOrigin="0.411,0.989"/>
-                <Image HorizontalAlignment="Left" Height="38" Margin="150,176,0,0" VerticalAlignment="Top" Width="38" Stretch="Fill" Source="/hostDepartment.png" RenderTransformOrigin="-3.342,-0.946"/>
+                <Image HorizontalAlignment="Left" Height="38" Margin="150,129,0,0" VerticalAlignment="Top" Width="38" Source="Images/department.png" Stretch="Fill" RenderTransformOrigin="0.411,0.989"/>
+                <Image HorizontalAlignment="Left" Height="38" Margin="150,176,0,0" VerticalAlignment="Top" Width="38" Stretch="Fill" Source="Images/hostDepartment.png" RenderTransformOrigin="-3.342,-0.946"/>
                 <Label Content="Регестрация Учереждения" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" BorderBrush="Black" Foreground="White"/>
 
             </Grid>

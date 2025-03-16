@@ -57,14 +57,23 @@
                 </Rectangle.Fill>
             </Rectangle>
             <Label Content="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="1.403,-0.209" FontFamily="Comic Sans MS" FontSize="24" Foreground="White" Canvas.Left="163"/>
-            <Image x:Name="user" HorizontalAlignment="Left" Height="42" VerticalAlignment="Center" Width="43" RenderTransformOrigin="0.494,0.531" Stretch="Fill" Source="/user_icon.png" Canvas.Left="59" Canvas.Top="116"/>
-            <Image x:Name="locked" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.494,0.531" Stretch="Fill" Source="/locked_icon.png" Canvas.Left="59" Canvas.Top="164"/>
+            <Image x:Name="user" HorizontalAlignment="Left" Height="42" VerticalAlignment="Center" Width="43" RenderTransformOrigin="0.494,0.531" Stretch="Fill" Source="Images/user_icon.png" Canvas.Left="59" Canvas.Top="116"/>
+            <Image x:Name="locked" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.494,0.531" Stretch="Fill" Source="Images/locked_icon.png" Canvas.Left="59" Canvas.Top="164"/>
             <TextBox x:Name="login"  HorizontalAlignment="Center" TextWrapping="Wrap" Width="232" Height="35" VerticalAlignment="Top" Canvas.Left="126" Canvas.Top="123" FontSize="18"   >
                 <TextBox.Effect>
                     <DropShadowEffect BlurRadius="60" Color="LightBlue" ShadowDepth="0" />
                 </TextBox.Effect>
             </TextBox>
-            <Button x:Name="avto" Content="Авторизация"   HorizontalAlignment="Center" Width="232" Height="33" VerticalAlignment="Top" Canvas.Left="126" Canvas.Top="230" Click="Button_Click" Background="#FF00CAFF" FontSize="16" FontFamily="Comic Sans MS" Foreground="#FFFBFBFB" Cursor="Hand">
+            <Button x:Name="avto" Content="Авторизация"   
+                    HorizontalAlignment="Center" 
+                    Width="232" Height="33" 
+                    VerticalAlignment="Top" 
+                    Canvas.Left="126" Canvas.Top="230" 
+                    Click="Button_Click" 
+                    Background="#FF00CAFF" 
+                    FontSize="16" FontFamily="Comic Sans MS" 
+                    Foreground="#FFFBFBFB" 
+                    Cursor="Hand">
 
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -80,15 +89,15 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Image x:Name="eye" HorizontalAlignment="Center" Height="36" VerticalAlignment="Top" Width="37" Stretch="Fill" Source="/eye_icon.png" Canvas.Left="363" Canvas.Top="174" MouseLeftButtonDown="eye_MouseLeftButtonDown" Cursor="Hand"/>
-            <Image x:Name="eyeLocked" Height="36" Width="37" Stretch="Fill" Source="/eye_off_icon.png" Canvas.Left="363" Canvas.Top="174" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="eyeLocked_MouseLeftButtonDown" Cursor="Hand"/>
-            <PasswordBox x:Name="passwordBox" Canvas.Left="126" Canvas.Top="175" Width="232" Height="33"  HorizontalAlignment="Center" VerticalAlignment="Center"  PasswordChar="•" FontSize="18" Password="" MaxLength="8"/>
-            <TextBox x:Name="passwordBoxNew" TextWrapping="Wrap" Width="232" Height="33" Canvas.Left="126" Canvas.Top="175" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding SecurePassword, ElementName=passwordBox, Mode=OneWay}" MaxLength="8" >
+            <Image x:Name="eye" HorizontalAlignment="Center" Height="36" VerticalAlignment="Top" Width="37" Stretch="Fill" Source="Images/eye_icon.png" Canvas.Left="363" Canvas.Top="174" MouseLeftButtonDown="eye_MouseLeftButtonDown" Cursor="Hand"/>
+            <Image x:Name="eyeLocked" Height="36" Width="37" Stretch="Fill" Source="Images/eye_off_icon.png" Canvas.Left="363" Canvas.Top="174" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="eyeLocked_MouseLeftButtonDown" Cursor="Hand"/>
+            <PasswordBox x:Name="passwordBox" Canvas.Left="126" Canvas.Top="175" Width="232" Height="33"  HorizontalAlignment="Center" VerticalAlignment="Center"  PasswordChar="•" FontSize="18" Password="" MaxLength="24"/>
+            <TextBox x:Name="passwordBoxNew" TextWrapping="Wrap" Width="232" Height="33" Canvas.Left="126" Canvas.Top="175" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" MaxLength="24" >
                 <TextBox.Effect>
                     <DropShadowEffect BlurRadius="60" Color="LightBlue" ShadowDepth="0" />
                 </TextBox.Effect>
             </TextBox>
-            <Image Height="75" Canvas.Left="201" Canvas.Top="43" Width="82" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/ava1.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.501"/>
+            <Image Height="75" Canvas.Left="201" Canvas.Top="43" Width="82" HorizontalAlignment="Center" VerticalAlignment="Center" Source="images/ava1.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.501"/>
         </Canvas>
     </Grid>
 </Window>

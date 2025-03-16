@@ -55,7 +55,6 @@ namespace WpfApp2
             }
             else if(registorName.Text.Length >= 2)
             {
-
                 MessageBox.Show("Вы успешно зарегестрировались");
 
                 admin = new adminWindows();

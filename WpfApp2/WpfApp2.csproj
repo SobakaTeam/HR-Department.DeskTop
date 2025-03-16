@@ -135,58 +135,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Images\eye_icon.png" />
-    <EmbeddedResource Include="Images\eye_off_icon.png" />
-    <EmbeddedResource Include="Images\locked_icon.png" />
+    <Resource Include="Images\eye_icon.png" />
+    <Resource Include="Images\eye_off_icon.png" />
+    <Resource Include="Images\locked_icon.png" />
     <Resource Include="Images\user_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="user_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="locked_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="eye_off_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="eye_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\avatar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="avatar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\ava.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ava.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\ava1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ava1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\department.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\hostDepartment.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="department.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="hostDepartment.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="пп1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\MEMPHIS_BACKGROUND_Mesa_de_trabajo_1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\pngwing.com.png" />
