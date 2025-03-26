@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="WindowsAddDepartament" Height="470" Width="800">
     <Grid>

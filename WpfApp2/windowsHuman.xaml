@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         WindowStyle="None"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="windowsHuman" Height="500" Width="800"
         Background="#5e6ad6">
 
 
     <Grid>
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="25"/>
@@ -38,11 +40,11 @@
                                     HorizontalAlignment="Left">
 
                         <Image
-                              x:Name="pas"
+                              x:Name="user"
                                Width="126"  
-                               Height="103" 
-                               Stretch="Fill"
-                               Margin="5,0,0,0"/>
+                               Height="108"
+                               Margin="5,0,0,0"
+                                Source="Images/user_icon.png"/>
 
                     </StackPanel>
 
@@ -50,12 +52,28 @@
                                 Height="25"
                                 Margin="0,5,0,0">
 
-                        <TextBlock 
+                        <TextBlock
+                            x:Name="textBlockPhone"
                             Text="Phone"                                    
                             FontSize="16"                                   
                             Foreground="white"    
                             HorizontalAlignment="Center"                                   
                             Margin="10,0,0,0"/>
+
+                        <TextBox
+                            x:Name="textBoxPhone"
+                            FontSize="16"
+                            Background="#3f4bb8"
+                            BorderThickness="0"
+                            Foreground="White"
+                            HorizontalAlignment="Center" 
+                            Margin="8,0,0,0"
+                            Visibility="Collapsed"
+                            TextDecorations="Underline"
+                            PreviewTextInput="textBoxPhone_PreviewTextInput"/>
+
+
+
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal"
@@ -207,8 +225,7 @@
                                     FontSize="16"                                   
                                     Foreground="white"    
                                     HorizontalAlignment="Center"                                   
-                                    Margin="10,0,0,0"
-                                    TextDecorations="Underline">
+                                    Margin="12,0,0,0">
                             </TextBlock>
 
                             <TextBox 
@@ -239,8 +256,7 @@
                                     FontSize="16"                                   
                                     Foreground="white"    
                                     HorizontalAlignment="Center"                                   
-                                    Margin="10,0,0,0"
-                                    TextDecorations="Underline"/>
+                                    Margin="12,0,0,0"/>
 
                             <TextBox 
                                     x:Name="textBoxName"
@@ -269,8 +285,7 @@
                                     FontSize="16"                                   
                                     Foreground="white"    
                                     HorizontalAlignment="Center"                                   
-                                    Margin="10,0,0,0"
-                                    TextDecorations="Underline"/>
+                                    Margin="12,0,0,0"/>
 
                             <TextBox 
                                     x:Name="textBoxpatronymic"
@@ -299,8 +314,7 @@
                                     FontSize="16"                                   
                                     Foreground="white"    
                                     HorizontalAlignment="Center"                                   
-                                    Margin="10,0,0,0"
-                                    TextDecorations="Underline"/>
+                                    Margin="12,0,0,0"/>
 
                             <TextBox 
                                     x:Name="textBoxDateOfBirth"
@@ -323,12 +337,26 @@
                                     Margin="0,5,0,0">
 
                             <TextBlock 
+                                    x:Name="TextBlockPlaceOfResidence"
                                     Text="МЕСТО ЖИТЕЛЬСТВА"                                    
                                     FontSize="16"                                   
                                     Foreground="white"    
                                     HorizontalAlignment="Center"                                   
+                                    Margin="12,0,0,0"/>
+                            
+                            <TextBox 
+                                    x:Name="TextBoxPlaceOfResidence"
+                                    FontSize="16"
+                                    Background="#3f4bb8"
+                                    BorderThickness="0"
+                                    Foreground="white"  
                                     Margin="10,0,0,0"
-                                    TextDecorations="Underline"/>
+                                    HorizontalAlignment="Center"
+                                    Width="350"
+                                    TextDecorations="Underline"
+                                    Visibility="Collapsed">
+                            </TextBox>
+
                         </StackPanel>
 
                     </StackPanel>
@@ -520,8 +548,7 @@
                                                FontSize="16"
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
-                                               Margin="10,0,0,0"
-                                               TextDecorations="Underline"/>
+                                               Margin="12,0,0,0"/>
 
                                     <TextBox 
                                                x:Name="textBoxkpost"
@@ -562,8 +589,7 @@
                                                FontSize="16"
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
-                                               Margin="10,0,0,0"
-                                               TextDecorations="Underline"/>
+                                               Margin="12,0,0,0"/>
 
                                     <TextBox 
                                                x:Name="textBoxDataRegistor"
@@ -589,8 +615,7 @@
                                                FontSize="16"
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
-                                               Margin="10,0,0,0"
-                                               TextDecorations="Underline"/>
+                                               Margin="12,0,0,0"/>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal"
@@ -603,8 +628,7 @@
                                             Foreground="white"    
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Center"                                   
-                                            Margin="10,0,0,0"
-                                            TextDecorations="Underline"/>
+                                            Margin="12,0,0,0"/>
 
                                     <TextBox 
                                             x:Name="textBoxVacation"
@@ -660,6 +684,10 @@
             </Grid>
         </Grid>
 
+        <Image x:Name="pasportt"
+                   MouseLeftButtonDown="pasportt_MouseLeftButtonDown" 
+                   Margin="167,65,71,98"
+                    Cursor="Hand"/>
 
     </Grid>
 </Window>

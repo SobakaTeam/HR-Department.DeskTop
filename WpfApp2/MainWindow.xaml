@@ -6,6 +6,7 @@
         xmlns:view="clr-namespace:WpfApp2.view"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         WindowStyle="None"
         Title="MainWindow" Height="450" Width="800">

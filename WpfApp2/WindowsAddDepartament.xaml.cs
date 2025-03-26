@@ -50,10 +50,10 @@ namespace WpfApp2
                                                    
             if (registorName.Text.Length <= 1)
             {
-               MessageBox.Show("Введённое имя слишком короткое, введите своё настоящие имя!");
+                MessageBox.Show("Введённое имя слишком короткое, введите своё настоящие имя!");
                 registorName.Text = "";
             }
-            else if(registorName.Text.Length >= 2)
+            else 
             {
                 MessageBox.Show("Вы успешно зарегестрировались");
 

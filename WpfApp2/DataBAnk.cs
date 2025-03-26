@@ -25,11 +25,19 @@ namespace WpfApp2
         public static String Datenow;
         public static DateTime datatimeVacation;
         public static DateTime dateonlyregistorVacation;
-        //Должность
-        public static string post = "ДОЛЖНОСТЬ: ";
         //паспорт
         public static string filePath;
-
+        //Образование
+        public static string filepath1;
+        //ОТМЕНА
+        public static string Name;
+        public static string LastName;
+        public static string patronymic;
+        public static string DateOfBirth;
+        public static string post;
+        public static string DataRegistor;
+        public static string Vacation;
+        public static string Phone;
 
     }
    
